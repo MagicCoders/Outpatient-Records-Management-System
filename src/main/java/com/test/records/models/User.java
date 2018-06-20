@@ -1,5 +1,6 @@
 package com.test.records.models;
 
+//User model
 public class User {
     private String userId;
     private String name;

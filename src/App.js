@@ -6,7 +6,7 @@ class App extends Component {
   render() {
 
       // 'let' keyword allows the declared variable to mutate/change.
-      let helloworld = 'First App, nothing interesting here.';
+      const testVariable = 'First App, nothing interesting here.';
     return (
       <div className="App">
         <header className="App-header">
@@ -14,9 +14,10 @@ class App extends Component {
           <h1 className="App-title">Hacker News: Powered by React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, edit <code>src/App.js</code> and save to reload.(hot reload)
         </p>
-          <h2>{helloworld}</h2>
+          <h2>{testVariable}</h2>
+          <p> </p>
         <p className="App-footer">
           Copyright &copy; <br/> Erick Ogaro, 2018
         </p>

@@ -1,12 +1,12 @@
 package com.test.records.models;
 
+//User model
 public class User {
     private String userId;
     private String name;
     private String staffId;
     private String email;
     private String role;
-    private String password;
 
     public User(String userId, String name, String staffId, String email, String role, String password) {
         this.userId = userId;
@@ -14,7 +14,7 @@ public class User {
         this.staffId = staffId;
         this.email = email;
         this.role = role;
-        this.password = password;
+        String password1 = password;
     }
 
     private String getUserId() {

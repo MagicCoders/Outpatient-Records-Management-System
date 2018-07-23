@@ -45,7 +45,7 @@ public class DoctorController {
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
 
-    @PutMapping("/doctor{id}")
+    @PutMapping("/doctor/{id}")
     public ResponseEntity<Patient> updatePatientRecord(@PathVariable String id, @RequestBody Patient patient){
         Optional<Patient> currentPatient = patientRepository.findById(id);
 

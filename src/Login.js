@@ -27,6 +27,7 @@ export default class Login extends  Component {
 
     render(){
         return(
+            <body className= "Body">
             <div className="Login">
                 <p className= "Login-header">
                     Submit Details Below:
@@ -62,6 +63,7 @@ export default class Login extends  Component {
                     Egerton University Sanatorium
                 </p>
             </div>
+            </body>
         );
     }
 }

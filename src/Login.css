@@ -1,0 +1,30 @@
+@media all and (min-width: 480px) {
+    .Login-header {
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        font-size: 1.6em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        background-color: white;
+    }
+
+    .Login {
+        padding: 100px 0;
+        background-color: #024F1B;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        max-width: 300px;
+        min-height: 300px;
+    }
+
+    .Login-footer {
+        padding: 10px;
+        height: 50px;
+        text-align: center;
+        font-size: 0.9em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        background-color: white;
+    }
+}

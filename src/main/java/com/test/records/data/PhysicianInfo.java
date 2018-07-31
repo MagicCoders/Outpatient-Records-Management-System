@@ -1,4 +1,5 @@
 public class PhysicianInfo {
+
     private String name;
     private String id;
     private String password;
@@ -26,4 +27,5 @@ public class PhysicianInfo {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

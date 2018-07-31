@@ -1,4 +1,5 @@
 public class ReceptionistInfo {
+
     private String name;
     private String id;
     private String password;
@@ -26,4 +27,5 @@ public class ReceptionistInfo {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

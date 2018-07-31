@@ -3,6 +3,7 @@ public class StudentInfo {
     private String name;
     private String id;
 
+
     public String getName() {
         return name;
     }
@@ -18,4 +19,6 @@ public class StudentInfo {
     public void setId(String id) {
         this.id = id;
     }
+
+
 }

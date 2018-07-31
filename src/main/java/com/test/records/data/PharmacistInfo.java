@@ -2,6 +2,7 @@ public class PharmacistInfo {
 
     private String name;
     private String id;
+
     private String password;
 
     public String getName() {
@@ -27,4 +28,5 @@ public class PharmacistInfo {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

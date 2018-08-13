@@ -1,11 +1,12 @@
 package com.test.records.crud;
 
-import com.test.records.models.Patient;
+import com.test.records.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-
 @Repository
-public interface PatientRepository extends MongoRepository<Patient, String> {
-    void findByPatientId(String patientId);
+public interface UserRepository extends MongoRepository<User, String> {
+
+    User findByStaffId(String staffID);
+
 }

@@ -1,0 +1,91 @@
+[{
+        "userId": "12345",
+        "name": "Jane Doe",
+        "staffId": "D1234",
+        "email": "janedoe@mail.com",
+        "gender": "female",
+        "role": "Receptionist",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "John Doe",
+        "staffId": "D1234",
+        "email": "johndoe@mail.com",
+        "role": "Receptionist",
+        "gender": "male",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "Jane Doe",
+        "staffId": "D1234",
+        "email": "janedoe@mail.com",
+        "role": "Physician",
+        "gender": "female",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "John Doe",
+        "staffId": "D1234",
+        "email": "johndoe@mail.com",
+        "role": "Physician",
+        "gender": "male",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "Jane Doe",
+        "staffId": "D1234",
+        "email": "janedoe@mail.com",
+        "role": "Doctor",
+        "gender": "female",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "John Doe",
+        "staffId": "D1234",
+        "email": "johndoe@mail.com",
+        "role": "Doctor",
+        "gender": "male",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "Jane Doe",
+        "staffId": "D1234",
+        "email": "janedoe@mail.com",
+        "role": "Lab-tech",
+        "gender": "female",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "John Doe",
+        "staffId": "D1234",
+        "email": "johndoe@mail.com",
+        "role": "Lab-tech",
+        "gender": "male",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "Jane Doe",
+        "staffId": "D1234",
+        "email": "janedoe@mail.com",
+        "role": "Pharmacist",
+        "gender": "female",
+        "password": "jane1234"
+    },
+    {
+        "userId": "12345",
+        "name": "John Doe",
+        "staffId": "D1234",
+        "email": "johndoe@mail.com",
+        "role": "Pharmacist",
+        "gender": "male",
+        "password": "jane1234"
+    }
+]

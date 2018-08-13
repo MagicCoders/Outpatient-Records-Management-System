@@ -1,59 +1,80 @@
 package com.test.records.models;
 
-//User model
-public class User {
-    private String userId;
-    private String name;
-    private String staffId;
-    private String email;
-    private String role;
+import java.io.Serializable;
 
-    public User(String userId, String name, String staffId, String email, String role, String password) {
+//User model
+public class User implements Serializable{
+    public String userId;
+    public String name;
+    public String staffId;
+    public String email;
+    public String role;
+    public String gender;
+    public String password;
+
+    public User(String userId, String name, String staffId, String email, String role, String gender, String password) {
         this.userId = userId;
         this.name = name;
         this.staffId = staffId;
         this.email = email;
         this.role = role;
-        String password1 = password;
+        this.gender = gender;
+        this.password = password;
     }
 
-    private String getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    private void setUserId(String userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    private String getName() {
+    public String getName() {
         return name;
     }
 
-    private void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    private String getStaffId() {
+    public String getStaffId() {
         return staffId;
     }
 
-    private void setStaffId(String staffId) {
+    public void setStaffId(String staffId) {
         this.staffId = staffId;
     }
 
-    private String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    private void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    private String getRole() {
+    public String getRole() {
         return role;
     }
 
-    private void setRole(String role) {
+    public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

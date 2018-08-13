@@ -2,6 +2,7 @@ package com.test.records.models;
 
 import java.util.Date;
 
+
 public class Patient {
     private String patientId;
     private String height;

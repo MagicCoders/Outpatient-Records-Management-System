@@ -1,0 +1,35 @@
+
+body {
+    background:#f7f7f7  url("../img/egu.png") no-repeat center;
+    background-size: 600px;
+}
+
+
+.form-container {
+    margin: 180px auto auto;
+    width: inherit;
+    opacity: 0.95;
+    /*mix-blend-mode: multiply;*/
+}
+
+.form-container h2{
+    text-align: center;
+    padding: 20px;
+}
+/*
+
+.form-container h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.button-group{
+    text-align: center;
+}
+
+.form-container h2,
+.form-container label,
+.form-container input,
+.form-container button{
+    font-weight: 300;
+}*/

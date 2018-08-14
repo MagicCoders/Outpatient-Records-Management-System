@@ -19,13 +19,26 @@ public class ReceptionController {
     private PatientRepository patientRepository;
 
     @RequestMapping("/reception")
-    @ResponseBody
     public String reception(){
-        return "{'aa':'bb'}";
+        return "reception";
     }
 
-    @PostMapping("/reception")
-    public ResponseEntity<Void> createPatientRecord (@RequestBody Patient patient){
+    @PostMapping("/reception/community")
+    public ResponseEntity<Void> createCommunityRecord (@RequestBody Patient patient){
+        patientRepository.save(patient);
+        HttpHeaders headers = new HttpHeaders();
+        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/reception/staff")
+    public ResponseEntity<Void> createStaffRecord (@RequestBody Patient patient){
+        patientRepository.save(patient);
+        HttpHeaders headers = new HttpHeaders();
+        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/reception/student")
+    public ResponseEntity<Void> createStudentRecord (@RequestBody Patient patient){
         patientRepository.save(patient);
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);

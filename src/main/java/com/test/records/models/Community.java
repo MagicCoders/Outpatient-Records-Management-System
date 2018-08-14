@@ -1,22 +1,22 @@
 package com.test.records.models;
 
-public class Communuty {
-    public String id;
+public class Community {
+    public int NationalId;
     public String patientId;
     public String name;
 
-    public Communuty(String id, String patientId, String name) {
-        this.id = id;
+    public Community(int NationalId, String patientId, String name) {
+        this.NationalId = NationalId;
         this.patientId = patientId;
         this.name = name;
     }
 
-    public String getId() {
-        return id;
+    public int getNationalId() {
+        return NationalId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setNationalId(int nationalId) {
+        this.NationalId = nationalId;
     }
 
     public String getPatientId() {

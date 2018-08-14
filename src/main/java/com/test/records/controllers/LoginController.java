@@ -1,7 +1,6 @@
 package com.test.records.controllers;
 
 import com.test.records.crud.UserRepository;
-import com.test.records.crud.UserService;
 import com.test.records.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

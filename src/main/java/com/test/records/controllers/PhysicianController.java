@@ -18,9 +18,8 @@ public class PhysicianController {
     private PatientRepository patientRepository;
 
     @RequestMapping("/physician")
-    @ResponseBody
     public String physician(){
-        return "physician object";
+        return "physician";
     }
 
     @RequestMapping("/physician/{id}")

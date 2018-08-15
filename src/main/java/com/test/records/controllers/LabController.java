@@ -9,52 +9,42 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @Controller
-public class DoctorController {
+public class LabController {
 
     @Autowired
     private PatientRepository patientRepository;
 
-    @RequestMapping("/doctor")
-    public String doctor(){
-        return "doctor";
+    @RequestMapping("/lab")
+    public String RenderLab(){
+        return "lab";
     }
 
-    @RequestMapping("/doctor/history/{id}")
+    @RequestMapping("/lab/{id}")
     @ResponseBody
-    public Optional<Patient> doctorDetails( @PathVariable String id ){
+    public Optional<Patient> patientDetails(@PathVariable String id ){
         Optional<Patient> patient = patientRepository.findById(id);
         return patient;
     }
 
-    @RequestMapping("/doctor/{id}")
-    @ResponseBody
-    public Optional<Patient> patientDetails( @PathVariable String id ){
-        Optional<Patient> patient = patientRepository.findById(id);
-        return patient;
-    }
-
-    @PostMapping("/doctor")
+    @PostMapping("/lab")
     public ResponseEntity<Void> createPatientRecord (@RequestBody Patient patient){
         patientRepository.save(patient);
         HttpHeaders headers = new HttpHeaders();
         return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
     }
 
-    @PutMapping("/doctor/{id}")
+    @PutMapping("/lab/{id}")
     public ResponseEntity<Patient> updatePatientRecord(@PathVariable String id, @RequestBody Patient patient){
         Optional<Patient> currentPatient = patientRepository.findById(id);
 
         if(currentPatient.isPresent()){
             Patient thePatient = currentPatient.get();
             thePatient.setTests(patient.getTests());
-            thePatient.setDiagnosis(patient.getDiagnosis());
-            thePatient.setPrognosis(patient.getPrognosis());
 
-            patientRepository.save(thePatient);
+            patientRepository.insert(thePatient);
             return new ResponseEntity<Patient>(thePatient, HttpStatus.OK);
         }
 

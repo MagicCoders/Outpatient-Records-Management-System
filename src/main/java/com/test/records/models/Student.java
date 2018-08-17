@@ -1,5 +1,7 @@
 package com.test.records.models;
 
+//Student Model
+
 public class Student {
     private String rejNo;
     private String patinetId;

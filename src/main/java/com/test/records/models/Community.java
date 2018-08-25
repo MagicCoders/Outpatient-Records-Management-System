@@ -4,7 +4,7 @@ public class Community {
     public int NationalId;
     public String patientId;
     public String name;
-
+ 
     public Community(int NationalId, String patientId, String name) {
         this.NationalId = NationalId;
         this.patientId = patientId;

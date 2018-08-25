@@ -3,30 +3,30 @@ package com.test.records.models;
 //Student Model
 
 public class Student {
-    private String rejNo;
-    private String patinetId;
+    private String regNo;
+    private String patientId;
     private String name;
 
-    public Student(String rejNo, String patinetId, String name) {
-        this.rejNo = rejNo;
-        this.patinetId = patinetId;
+    public Student(String regNo, String patientId, String name) {
+        this.regNo = regNo;
+        this.patientId = patientId;
         this.name = name;
     }
 
-    public String getRejNo() {
-        return rejNo;
+    public String getRegNo() {
+        return regNo;
     }
 
-    public void setRejNo(String rejNo) {
-        this.rejNo = rejNo;
+    public void setRegNo(String regNo) {
+        this.regNo = regNo;
     }
 
-    public String getPatinetId() {
-        return patinetId;
+    public String getPatientId() {
+        return patientId;
     }
 
-    public void setPatinetId(String patinetId) {
-        this.patinetId = patinetId;
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
     }
 
     public String getName() {

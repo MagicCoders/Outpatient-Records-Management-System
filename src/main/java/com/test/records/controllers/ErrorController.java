@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController {
 
     @RequestMapping("/error")
-    @ResponseBody
     public String handleError() {
         //do something like logging
         return "error";

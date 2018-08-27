@@ -7,31 +7,37 @@ public class Patient {
     private String patientId;
     private String height;
     private String name;
+    private String type;
     private int age;
     private int weight;
     private String doctor;
     private String prognosis;
     private String diagnosis;
-    private String Tests;
+    private String tests;
     private String prescription;
     private Date date;
 
-    public Patient(String patientId, String height, String name, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+    public Patient(String patientId, String height, String name, String type, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
         this.patientId = patientId;
         this.height = height;
         this.name = name;
+        this.type = type;
         this.age = age;
         this.weight = weight;
         this.doctor = doctor;
         this.prognosis = prognosis;
         this.diagnosis = diagnosis;
-        Tests = tests;
+        this.tests = tests;
         this.prescription = prescription;
         this.date = date;
     }
 
     public String getPatientId() {
         return patientId;
+    }
+
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
     }
 
     public String getName() {
@@ -42,8 +48,12 @@ public class Patient {
         this.name = name;
     }
 
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getHeight() {
@@ -95,11 +105,11 @@ public class Patient {
     }
 
     public String getTests() {
-        return Tests;
+        return tests;
     }
 
     public void setTests(String tests) {
-        Tests = tests;
+        tests = tests;
     }
 
     public String getPrescription() {

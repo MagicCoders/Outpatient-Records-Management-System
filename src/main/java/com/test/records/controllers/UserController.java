@@ -4,6 +4,7 @@ import com.test.records.crud.UserRepository;
 import com.test.records.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,15 +19,22 @@ public class UserController {
     private UserRepository userRepository;
 
     @RequestMapping("/")
-    @ResponseBody
-    public List<User> testRoute(){
-        return userRepository.findAll();
+    public String renderLogin(){
+        return "login";
+    }
+
+    @RequestMapping("/users")
+    public String getAllUsers(ModelMap modelMap){
+        List<User> allUsers = userRepository.findAll();
+        modelMap.put("users", allUsers);
+        return "user";
     }
 
     @RequestMapping("/user/{staffId}")
-    @ResponseBody
-    public User testUser(@PathVariable String staffId){
-        return userRepository.findByStaffId(staffId);
+    public String testUser(ModelMap modelMap, @PathVariable String staffId){
+        User user = userRepository.findByStaffId(staffId);
+        modelMap.put("user", user);
+        return "user-details";
     }
 
     @PostMapping("/user")

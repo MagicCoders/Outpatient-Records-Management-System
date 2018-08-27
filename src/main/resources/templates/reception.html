@@ -3,114 +3,63 @@
 
 <head>
     <title>Reception</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bulma.css" th:href="@{./css/bulma.css}" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/main.css" th:href="@{./css/main.css}" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fontawesome.css" th:href="@{./css/fontawesome.css}"
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bulma.css" th:href="@{/css/bulma.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/animate.css" th:href="@{/css/animate.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fontawesome.css"
+          th:href="@{/css/fontawesome.css}"
     />
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/main.css" th:href="@{/css/main.css}"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
 <body class="layout-default">
-    <section class="hero is-fullheight is-medium doctor-container">
-        <div class="columns is-centered">
-            <div class="column is-half">
-                <div class="box">
-                    <div class="has-text-centered">
-                        <h2 class="is-size-3 has-text-weight-light">Reception Content</h2>
-                        <p class="help is-danger">Data to be filled carefully and with caution. As accurate as posible</p>
-                    </div>
-                    <div class="card-content">
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Name:</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded">
-                                        <input class="input" type="text" placeholder="Students's Name">
-                                    </p>
+<section class="hero is-fullheight is-medium doctor-container">
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <div class="box">
+                <div class="has-text-centered">
+                    <h2 class="is-size-3 has-text-weight-light">Reception Content</h2>
+                    <p class="help is-danger">Data to be filled carefully and with caution. As accurate as possible</p>
+                </div>
+                <hr>
+                <div class="card-content">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-normal">
+                            <label class="label">Type:</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary"><a href="/reception/student">
+                                        <span class="icon is-small is-left">
+      <i class="fas fa-university"></i>
+    </span>
+                                          &#x2005; Student
+                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">RegNumber:</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded">
-                                        <input class="input" type="text" placeholder="S13/XXXXX/YR">
-                                    </p>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary"><a href="/reception/staff">
+                                        <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+                                        &#x2005; Staff member
+                                    </a>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Sex:</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded">
-                                        <div class="select">
-                                            <select>
-                                                <option>Female</option>
-                                                <option>Male</option>
-                                            </select>
-                                        </div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Visit Type:</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded">
-                                        <div class="select">
-                                            <select>
-                                                <option>New</option>
-                                                <option>Returning</option>
-                                            </select>
-                                        </div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="field is-horizontal">
-                            <div class="field-label is-normal">
-                                <label class="label">Receptionist:</label>
-                            </div>
-                            <div class="field-body">
-                                <div class="field">
-                                    <p class="control is-expanded">
-                                        <input class="input is-primary has-text-primary" type="text" value="Receptionist's Name" readonly>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="field is-horizontal">
-                            <div class="field-label">
-                                <!-- Left empty for spacing -->
-                            </div>
-                            <div class="field-body">
-                                <div class="field is-horizontal">
-                                    <div class="control">
-                                        <button class="button is-primary">
-                                            Create Record
-                                        </button>
-                                    </div>
-                                    <div class="control">
-                                        <button class="button is-danger invisible">
-                                            Update Record
-                                        </button>
-                                    </div>
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary"><a href="/reception/community">
+                                        <span class="icon is-small is-left">
+      <i class="fas fa-user-friends"></i>
+    </span>
+                                        &#x2005; Community member
+                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +67,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    </div>
+</section>
+
+<script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
 </body>
 
 </html>

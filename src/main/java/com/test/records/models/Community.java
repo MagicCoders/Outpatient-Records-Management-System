@@ -6,10 +6,16 @@ public class Community {
     public String nationalId;
     public String patientId;
     public String name;
+<<<<<<< HEAD
     public Gender gender;
 
     public Community(String nationalId, String patientId, String name) {
         this.nationalId = nationalId;
+=======
+ 
+    public Community(int NationalId, String patientId, String name) {
+        this.NationalId = NationalId;
+>>>>>>> master
         this.patientId = patientId;
         this.name = name;
     }

@@ -1,4 +1,5 @@
 package com.test.records.models.enumerated;
 
-public class Roles {
+public enum Roles {
+    receptionist, physician, doctor, labTech, pharmacist;
 }

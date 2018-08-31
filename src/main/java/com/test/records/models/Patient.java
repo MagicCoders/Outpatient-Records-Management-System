@@ -1,37 +1,55 @@
 package com.test.records.models;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.Date;
 
 
 public class Patient {
+//    @Id
     private String patientId;
     private String height;
     private String name;
+    private String type;
+<<<<<<< HEAD
+    private String age;
+    private String weight;
+=======
     private int age;
     private int weight;
+>>>>>>> master
     private String doctor;
     private String prognosis;
     private String diagnosis;
-    private String Tests;
+    private String tests;
     private String prescription;
     private Date date;
 
-    public Patient(String patientId, String height, String name, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+<<<<<<< HEAD
+    public Patient(String patientId, String height, String name, String type, String age, String weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+=======
+    public Patient(String patientId, String height, String name, String type, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+>>>>>>> master
         this.patientId = patientId;
         this.height = height;
         this.name = name;
+        this.type = type;
         this.age = age;
         this.weight = weight;
         this.doctor = doctor;
         this.prognosis = prognosis;
         this.diagnosis = diagnosis;
-        Tests = tests;
+        this.tests = tests;
         this.prescription = prescription;
         this.date = date;
     }
 
     public String getPatientId() {
         return patientId;
+    }
+
+    public void setPatientId(String patientId) {
+        this.patientId = patientId;
     }
 
     public String getName() {
@@ -42,8 +60,12 @@ public class Patient {
         this.name = name;
     }
 
-    public void setPatientId(String patientId) {
-        this.patientId = patientId;
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getHeight() {
@@ -54,19 +76,19 @@ public class Patient {
         this.height = height;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
-    public int getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -95,11 +117,11 @@ public class Patient {
     }
 
     public String getTests() {
-        return Tests;
+        return tests;
     }
 
     public void setTests(String tests) {
-        Tests = tests;
+        tests = tests;
     }
 
     public String getPrescription() {

@@ -2,15 +2,24 @@ package com.test.records.models;
 
 //Student Model
 
+import com.test.records.models.enumerated.Gender;
+<<<<<<< HEAD
+import org.springframework.data.annotation.Id;
+=======
+>>>>>>> master
+
 public class Student {
     private String regNo;
+    @Id
     private String patientId;
     private String name;
+    private Gender gender;
 
-    public Student(String regNo, String patientId, String name) {
+    public Student(String regNo, String patientId, String name, Gender gender) {
         this.regNo = regNo;
         this.patientId = patientId;
         this.name = name;
+        this.gender = gender;
     }
 
     public String getRegNo() {
@@ -35,5 +44,13 @@ public class Student {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }

@@ -7,12 +7,13 @@ public class User implements Serializable{
     public String userId;
     public String name;
     public String staffId;
+    public String nationalId;
     public String email;
     public String role;
     public String gender;
     public String password;
 
-    public User(String userId, String name, String staffId, String email, String role, String gender, String password) {
+    public User(String userId, String name, String staffId, String nationalId, String email, String role, String gender, String password) {
         this.userId = userId;
         this.name = name;
         this.staffId = staffId;
@@ -44,6 +45,14 @@ public class User implements Serializable{
 
     public void setStaffId(String staffId) {
         this.staffId = staffId;
+    }
+
+    public String getNationalId() {
+        return nationalId;
+    }
+
+    public void setNationalId(String nationalId) {
+        this.nationalId = nationalId;
     }
 
     public String getEmail() {

@@ -3,24 +3,26 @@
 
 <head>
     <title>Lab</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bulma.css" th:href="@{./css/bulma.css}" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/main.css" th:href="@{./css/main.css}" />
-    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fontawesome.css" th:href="@{./css/fontawesome.css}"
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bulma.css" th:href="@{/css/bulma.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/main.css" th:href="@{/css/main.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fontawesome.css"
+          th:href="@{/css/fontawesome.css}"
     />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 
 <body class="layout-default">
-    <section class="hero is-fullheight is-medium doctor-container">
-        <div class="columns is-centered">
-            <div class="column is-four-fifths">
-                <div class="box">
-                    <div class="has-text-centered">
-                        <h2 class="is-size-3 has-text-weight-light">Lab Content</h2>
-                        <p class="help is-danger">Data to be filled carefully and with caution. As accurate as posible</p>
-                    </div>
-                    <div class="card-content">
+<section class="hero is-fullheight is-medium doctor-container">
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <div class="box">
+                <div class="has-text-centered">
+                    <h2 class="is-size-3 has-text-weight-light">Physician Content</h2>
+                    <p class="help is-danger">Data to be filled carefully and with caution. As accurate as possible</p>
+                </div>
+                <div class="card-content">
+                    <form action="#" autocomplete="off" th:object="${patient}" method="post">
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
                                 <label class="label">Patient:</label>
@@ -34,7 +36,8 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded">
-                                            <input class="input is-primary has-text-primary is-medium" type="text" value="Patient Name" readonly>
+                                            <input class="input is-primary has-text-primary is-medium" type="text"
+                                                   th:value="${patient.name}" value="Patient Name" readonly>
                                         </p>
                                     </div>
                                 </div>
@@ -46,11 +49,12 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded">
-                                            <input class="input is-primary has-text-primary is-medium" type="text" value="Female" readonly>
+                                            <input class="input is-primary has-text-primary is-medium" type="text"
+                                                   value="Female" readonly>
                                         </p>
                                     </div>
                                 </div>
-                                 <div class="field is-expanded">
+                                <div class="field is-expanded">
                                     <div class="field has-addons">
                                         <p class="control">
                                             <a class="button is-primary has-background-primary  is-medium">
@@ -58,7 +62,8 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded">
-                                            <input class="input is-primary has-text-primary is-medium" type="number" value="1234" readonly>
+                                            <input class="input is-primary has-text-primary is-medium" type="text"
+                                                   th:value="${patient.patientId}" value="1234" readonly>
                                         </p>
                                     </div>
                                 </div>
@@ -78,7 +83,8 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded has-icons-right">
-                                            <input class="input is-primary has-text-primary" type="number" value="18">
+                                            <input class="input is-primary has-text-primary" type="number"
+                                                   th:value="${patient.age}" value="18">
                                             <span class="icon is-small is-right">
                                                 Yrs
                                             </span>
@@ -93,7 +99,8 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded has-icons-right">
-                                            <input class="input is-primary has-text-primary" type="number" value="18">
+                                            <input class="input is-primary has-text-primary" type="number"
+                                                   th:value="${patient.weight}" value="18">
                                             <span class="icon is-small is-right">
                                                 Kg
                                             </span>
@@ -108,7 +115,8 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded has-icons-right">
-                                            <input class="input is-primary has-text-primary" type="number" value="18">
+                                            <input class="input is-primary has-text-primary" type="number"
+                                                   th:value="${patient.height}" value="18">
                                             <span class="icon is-small is-right">
                                                 M
                                             </span>
@@ -130,7 +138,7 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded has-icons-right">
-                                            <input class="input is-primary has-text-primary" type="number" value="18" >
+                                            <input class="input is-primary has-text-primary" type="number" value="18">
                                             <span class="icon is-small is-right">
                                                 Kg/m
                                             </span>
@@ -145,7 +153,7 @@
                                             </a>
                                         </p>
                                         <p class="control is-expanded has-icons-right">
-                                            <input class="input is-primary has-text-primary" type="number" value="18" >
+                                            <input class="input is-primary has-text-primary" type="number" value="18">
                                             <span class="icon is-small is-right">
                                                 Deg
                                             </span>
@@ -155,7 +163,7 @@
                             </div>
                         </div>
 
-                        <hr>                       
+                        <hr>
 
                         <div class="field is-horizontal">
                             <div class="field-label is-normal">
@@ -164,7 +172,8 @@
                             <div class="field-body">
                                 <div class="field">
                                     <p class="control is-expanded">
-                                        <input class="input is-primary has-text-primary" type="text" value="Physician's Name" readonly>
+                                        <input class="input is-primary has-text-primary" type="text"
+                                               value="Physician's Name" readonly>
                                     </p>
                                 </div>
                             </div>
@@ -177,18 +186,19 @@
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary">
+                                        <button type="submit" class="button is-primary">
                                             Submit patient Details
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </body>
 
 </html>

@@ -7,6 +7,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,23 +19,20 @@ public class DoctorController {
     @Autowired
     private PatientRepository patientRepository;
 
-    @RequestMapping("/doctor")
-    public String doctor(){
-        return "doctor";
-    }
+    @Autowired
+    public QueueController queueController;
 
-    @RequestMapping("/doctor/history/{id}")
-    @ResponseBody
-    public Optional<Patient> doctorDetails( @PathVariable String id ){
-        Optional<Patient> patient = patientRepository.findById(id);
-        return patient;
+    @RequestMapping("/doctor")
+    public String doctor(ModelMap modelMap){
+        Object allPatients = queueController.getPatientQueue();
+        modelMap.put("patients", allPatients);
+        return "queue";
     }
 
     @RequestMapping("/doctor/{id}")
-    @ResponseBody
-    public Optional<Patient> patientDetails( @PathVariable String id ){
+    public String patientDetails( @PathVariable String id ){
         Optional<Patient> patient = patientRepository.findById(id);
-        return patient;
+        return "doctor";
     }
 
     @PostMapping("/doctor")

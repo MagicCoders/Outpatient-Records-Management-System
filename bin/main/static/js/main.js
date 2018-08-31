@@ -1,7 +1,6 @@
 'use strict';
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 window.onload = () => {
 =======
 let checkregNo =
@@ -26,15 +25,11 @@ window.onload = () => {
     let regNo = document.getElementById('regNo');
     let name = document.getElementById('name');
 >>>>>>> master
-=======
-window.onload = () => {
->>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
     let button = document.getElementById('submit-buttons');
     let update = document.getElementById('update-button')
     let visit = document.getElementById("visit");
     let staffId = document.getElementById('staffId');
     let nationalId = document.getElementById('nationalId');
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     let patientType = document.getElementById("type-selector");
@@ -45,13 +40,10 @@ window.onload = () => {
     let communityButton = document.getElementById("submit-community-button");
     let studentButton = document.getElementById("submit-student-button");
 >>>>>>> master
-=======
->>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
     let timeout;
     let studentName;
     let studentRegNo;
 
-<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     patientType.addEventListener("click", (event) => {
@@ -157,8 +149,6 @@ window.onload = () => {
     });
 
 >>>>>>> master
-=======
->>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
     nationalId.addEventListener('keyup', (event) => {
         event.preventDefault();
         let nationalIdValue = nationalId.value;

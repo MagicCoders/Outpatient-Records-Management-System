@@ -12,12 +12,17 @@ public class Patient {
     private String name;
     private String type;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private String age;
     private String weight;
 =======
     private int age;
     private int weight;
 >>>>>>> master
+=======
+    private String age;
+    private String weight;
+>>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
     private String doctor;
     private String prognosis;
     private String diagnosis;
@@ -26,10 +31,14 @@ public class Patient {
     private Date date;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Patient(String patientId, String height, String name, String type, String age, String weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
 =======
     public Patient(String patientId, String height, String name, String type, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
 >>>>>>> master
+=======
+    public Patient(String patientId, String height, String name, String type, String age, String weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+>>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
         this.patientId = patientId;
         this.height = height;
         this.name = name;

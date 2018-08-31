@@ -4,9 +4,13 @@ package com.test.records.models;
 
 import com.test.records.models.enumerated.Gender;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import org.springframework.data.annotation.Id;
 =======
 >>>>>>> master
+=======
+import org.springframework.data.annotation.Id;
+>>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
 
 public class Student {
     private String regNo;

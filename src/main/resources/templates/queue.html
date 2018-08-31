@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Reception</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/bulma.css" th:href="@{/css/bulma.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/animate.css" th:href="@{/css/animate.css}"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/fontawesome.css"
+          th:href="@{/css/fontawesome.css}"
+    />
+    <!--<link rel="stylesheet" type="text/css" media="all" href="../static/css/main.css" th:href="@{/css/main.css}"/>-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+
+<body class="layout-default">
+<section class="hero is-fullheight is-medium doctor-container">
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <div class="box">
+                <div class="card-content">
+                    <nav class="panel">
+                        <p class="panel-heading">
+                            Patient Queue
+                        </p>
+                        <a th:each="patient: ${patients}"  th:href="@{'/physician/' + ${patient.patientId}}" th:text="${patient.name}" class="panel-block is-active" >
+    <span class="panel-icon">
+      <i class="fas fa-user-tag" aria-hidden="true"></i>
+    </span>
+
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--<script src="../../static/js/studentValidation.js" th:src="@{/js/studentValidation.js}"></script>-->
+</body>
+
+</html>

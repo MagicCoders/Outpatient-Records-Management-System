@@ -4,6 +4,10 @@ body {
     background-size: 500px;
     padding-top: 40px;
 }
+a{
+    text-decoration: none;
+    color: #f7f7f7;
+}
 
 
 .form-container {
@@ -16,10 +20,10 @@ body {
     padding: 20px;
 }
 
-.form-container,
+/*.form-container,
 .doctor-container{
-    opacity: 0.95;
-}
+    opacity: 1;
+}*/
 
 .test-positive::placeholder{
     color: #23d160
@@ -29,6 +33,10 @@ body {
     color: #fe385f
 }
 
+#regNo{
+    text-transform: uppercase;
+}
+
 .invisible{
-    display: none;
+    display: none !important;
 }

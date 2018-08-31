@@ -16,10 +16,10 @@ body {
     padding: 20px;
 }
 
-.form-container,
+/*.form-container,
 .doctor-container{
-    opacity: 0.95;
-}
+    opacity: 1;
+}*/
 
 .test-positive::placeholder{
     color: #23d160

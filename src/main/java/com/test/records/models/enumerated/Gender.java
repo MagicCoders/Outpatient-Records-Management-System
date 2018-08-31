@@ -1,4 +1,5 @@
 package com.test.records.models.enumerated;
 
-public class Gender {
+public enum  Gender {
+    male, female;
 }

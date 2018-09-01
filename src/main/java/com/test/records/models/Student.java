@@ -3,9 +3,14 @@ package com.test.records.models;
 //Student Model
 
 import com.test.records.models.enumerated.Gender;
+<<<<<<< HEAD
+import org.springframework.data.annotation.Id;
+=======
+>>>>>>> master
 
 public class Student {
     private String regNo;
+    @Id
     private String patientId;
     private String name;
     private Gender gender;

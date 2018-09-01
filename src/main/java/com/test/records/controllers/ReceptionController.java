@@ -9,10 +9,18 @@ import com.test.records.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+<<<<<<< HEAD
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.*;
+=======
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+
+>>>>>>> master
 
 @Controller
 public class ReceptionController {
@@ -25,9 +33,12 @@ public class ReceptionController {
 
     @Autowired
     private StudentRepository studentRepository;
+<<<<<<< HEAD
 
     @Autowired
     public QueueController queueController;
+=======
+>>>>>>> master
 
     @RequestMapping("/reception")
     public String reception(){
@@ -55,7 +66,10 @@ public class ReceptionController {
     @PostMapping("/reception/community")
     public String createCommunityRecord (@ModelAttribute Community community){
         communityRepository.save(community);
+<<<<<<< HEAD
         queueController.addToQueue(community);
+=======
+>>>>>>> master
 
         return ("redirect:/reception");
     }
@@ -63,7 +77,10 @@ public class ReceptionController {
     @PostMapping("/reception/staff")
     public String createStaffRecord (@ModelAttribute Staff staff){
         staffRepository.save(staff);
+<<<<<<< HEAD
         queueController.addToQueue(staff);
+=======
+>>>>>>> master
 
         return ("redirect:/reception");
     }
@@ -71,7 +88,10 @@ public class ReceptionController {
     @PostMapping("/reception/student")
     public String createStudentRecord (@ModelAttribute Student student){
         studentRepository.save(student);
+<<<<<<< HEAD
         queueController.addToQueue(student);
+=======
+>>>>>>> master
 
         return ("redirect:/reception");
     }

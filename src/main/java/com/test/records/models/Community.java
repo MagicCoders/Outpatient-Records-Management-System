@@ -1,6 +1,7 @@
 package com.test.records.models;
 
 import com.test.records.models.enumerated.Gender;
+<<<<<<< HEAD
 import org.springframework.data.annotation.Id;
 
 public class Community {
@@ -12,6 +13,23 @@ public class Community {
 
     public Community(String nationalId, String patientId, String name, Gender gender) {
         this.nationalId = nationalId;
+=======
+
+public class Community {
+    public String nationalId;
+    public String patientId;
+    public String name;
+<<<<<<< HEAD
+    public Gender gender;
+
+    public Community(String nationalId, String patientId, String name) {
+        this.nationalId = nationalId;
+=======
+ 
+    public Community(int NationalId, String patientId, String name) {
+        this.NationalId = NationalId;
+>>>>>>> master
+>>>>>>> master
         this.patientId = patientId;
         this.name = name;
         this.gender = gender;

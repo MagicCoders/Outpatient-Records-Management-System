@@ -9,7 +9,12 @@ import java.util.List;
 
 @Repository
 public interface PatientRepository extends MongoRepository<Patient, String> {
+<<<<<<< HEAD
     Patient findByPatientId(String patientId);
     List<Patient> findAllByType(String type);
 
+=======
+    void findByPatientId(String patientId);
+    void findAllByType(String type);
+>>>>>>> master
 }

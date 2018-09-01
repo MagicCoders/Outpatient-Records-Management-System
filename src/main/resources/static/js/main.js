@@ -2,8 +2,11 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 window.onload = () => {
 =======
+=======
+>>>>>>> master
 let checkregNo =
     (regNo) => {
         return /^[A-Z]{1,2}[0-9]{2}\/[0-9]{5}\/[0-2][0-9]/i.test(regNo);
@@ -25,10 +28,13 @@ let checkNationalId = (nationalId) => {
 window.onload = () => {
     let regNo = document.getElementById('regNo');
     let name = document.getElementById('name');
+<<<<<<< HEAD
 >>>>>>> master
 =======
 window.onload = () => {
 >>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
+=======
+>>>>>>> master
     let button = document.getElementById('submit-buttons');
     let update = document.getElementById('update-button')
     let visit = document.getElementById("visit");
@@ -36,7 +42,10 @@ window.onload = () => {
     let nationalId = document.getElementById('nationalId');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
     let patientType = document.getElementById("type-selector");
     let studentIdContainer = document.getElementById("studentId-container");
     let staffIdContainer = document.getElementById("staffId-container");
@@ -44,16 +53,22 @@ window.onload = () => {
     let stuffButton = document.getElementById("submit-staff-button");
     let communityButton = document.getElementById("submit-community-button");
     let studentButton = document.getElementById("submit-student-button");
+<<<<<<< HEAD
 >>>>>>> master
 =======
 >>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
+=======
+>>>>>>> master
     let timeout;
     let studentName;
     let studentRegNo;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
     patientType.addEventListener("click", (event) => {
         event.preventDefault();
         
@@ -156,9 +171,12 @@ window.onload = () => {
         }, 1000);
     });
 
+<<<<<<< HEAD
 >>>>>>> master
 =======
 >>>>>>> 4740aa5390d07d14ec90d08cffccef7ef4293545
+=======
+>>>>>>> master
     nationalId.addEventListener('keyup', (event) => {
         event.preventDefault();
         let nationalIdValue = nationalId.value;

@@ -1,13 +1,19 @@
 package com.test.records.models;
 
 import com.test.records.models.enumerated.Gender;
+<<<<<<< HEAD
 import org.springframework.data.annotation.Id;
+=======
+>>>>>>> master
 
 public class Staff {
     public String staffId;
     public String nationalId;
     public String name;
+<<<<<<< HEAD
     @Id
+=======
+>>>>>>> master
     public String patientId;
     public String id;
     public Gender gender;

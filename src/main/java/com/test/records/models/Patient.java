@@ -11,8 +11,13 @@ public class Patient {
     private String height;
     private String name;
     private String type;
+<<<<<<< HEAD
     private String age;
     private String weight;
+=======
+    private int age;
+    private int weight;
+>>>>>>> master
     private String doctor;
     private String prognosis;
     private String diagnosis;
@@ -20,8 +25,12 @@ public class Patient {
     private String prescription;
     private Date date;
 
+<<<<<<< HEAD
 
     public Patient(String patientId, String height, String name, String type, String age, String weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+=======
+    public Patient(String patientId, String height, String name, String type, int age, int weight, String doctor, String prognosis, String diagnosis, String tests, String prescription, Date date) {
+>>>>>>> master
         this.patientId = patientId;
         this.height = height;
         this.name = name;
